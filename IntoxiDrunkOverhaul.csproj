@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <RootNamespace>IntoxiDrunkOverhaul</RootNamespace>
+    <AssemblyName>IntoxiDrunkOverhaul</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StardewModdingAPI"             Version="4.2.1" />
+    <PackageReference Include="StardewValley"                 Version="1.6.0" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL"  Version="3.8.1.303" />
+  </ItemGroup>
+
+</Project>

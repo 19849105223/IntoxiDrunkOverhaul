@@ -1,0 +1,9 @@
+{
+  "Name": "Intoxi-Drunk Overhaul",
+  "Author": "张恩瑜 & ChatGPT",
+  "Version": "1.1.0",
+  "UniqueID": "zhangenyu.IntoxiDrunkOverhaul",
+  "EntryDll": "IntoxiDrunkOverhaul.dll",
+  "MinimumApiVersion": "4.0.0",
+  "Description": "叠加醉酒效果：摇晃、减速、掉空瓶、醉倒去诊所。"
+}
