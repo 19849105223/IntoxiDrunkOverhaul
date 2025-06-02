@@ -1,0 +1,30 @@
+name: Build Stardew Valley Mod
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Build IntoxiDrunkOverhaul
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup .NET SDK 8.0
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Restore and Build
+      run: |
+        dotnet restore
+        dotnet build IntoxiDrunkOverhaul.csproj -c Release
+
+    - name: Upload compiled DLL as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: IntoxiDrunkOverhaul-DLL
+        path: bin/Release/net8.0/IntoxiDrunkOverhaul.dll
